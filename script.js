@@ -1,4 +1,5 @@
 $(function() {
+    $('#header').load('header.html');
 
     $('.nav-button').hover(
         function() {
@@ -32,6 +33,8 @@ $(function() {
       ];
       var slideLine = windowWidth - slidebarWidth[0] - slidebarWidth[3];
       var slideFontSize = slideLine / 6;
+    var nowPageMenu = $('title').text();
+
 
     if (scrollPos >= windowHeight / 8) {
         $('.center-box').hide();
